@@ -24,4 +24,4 @@ After inputting the contour data, geometry settings, and physical parameters (st
 3. Press “Export” and select an output file name and location. The output file will list the acceleration, fill ratio, Weber number, Froude number, Bond number, modal frequencies, modal masses, pendulum lengths, pendulum mass heights, amplitude ratios, spring mass hinge points, and spring stiffnesses for each data point as a comma-separated file.
 
 ## Current Repository for SLOSH-ML
-Link to current repository: https://github.gatech.edu/jeffendi3/LGST-Analytical-Sloshing-Tool
+Link to current repository: https://github.com/LGST-LAB/slosh_ml
