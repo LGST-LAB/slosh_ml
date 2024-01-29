@@ -1,7 +1,7 @@
 # SLOSH ML version 1.01_beta User Guide
 
 ## Overview
-SLOSH ML version v1.01_beta is an open-source tool from the LGST (Low Gravity Science and Technology) Lab at Georgia Tech that analyzes sloshing in different tank shapes utilizing a spring-mass model. It is based on the SLOSH-XL tool created by F.T. Dodge at the Southwestern Research Institute.
+SLOSH ML version v1.01_beta is an open-source, MATLAB-based graphical user interface (GUI) tool from the LGST (Low Gravity Science and Technology) Lab at Georgia Tech that analyzes rocket propellant sloshing in different tank shapes for space launch vehicles utilizing a spring-mass model. It is based on the SLOSH-XL tool created by F.T. Dodge at the Southwestern Research Institute.
 
 ## Required Dependencies
 The user will need the following dependencies to run the SLOSH ML program:
