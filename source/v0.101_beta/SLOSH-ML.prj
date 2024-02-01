@@ -1,0 +1,110 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.101_beta\SLOSH-ML.prj" location="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.101_beta" name="SLOSH-ML" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>SLOSH_ML</param.appname>
+    <param.icon>${PROJECT_ROOT}\SLOSH-ML_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>0.101</param.version>
+    <param.authnamewatermark>Álvaro Romero-Calvo</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.summary>SLOSH-ML is a Matlab graphical user interface designed to analyze rocket propellant sloshing in space launch vehicle</param.summary>
+    <param.description>See https://github.com/LGST-LAB/slosh_ml/tree/main</param.description>
+    <param.screenshot>${PROJECT_ROOT}\resources\logo.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\SLOSH_ML\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>C:\delete_this_later</param.intermediate>
+    <param.files.only>C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.101_beta\for_redistribution_files_only</param.files.only>
+    <param.output>C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.101_beta\for_redistribution</param.output>
+    <param.logdir>C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.101_beta</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\SLOSH_ML.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\contours</file>
+      <file>${PROJECT_ROOT}\functions</file>
+      <file>${PROJECT_ROOT}\resources</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="C:\delete_this_later" name="SLOSH_ML.exe" optional="false">C:\delete_this_later\SLOSH_ML.exe</file>
+      <file location="C:\delete_this_later" name="splash.png" optional="false">C:\delete_this_later\splash.png</file>
+      <file location="C:\delete_this_later" name="readme.txt" optional="true">C:\delete_this_later\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2023a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
