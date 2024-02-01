@@ -4,10 +4,10 @@
 SLOSH-ML is an open-source, MATLAB-based graphical user interface (GUI) tool designed to obtain the mechanical analogy parameters representing linear lateral sloshing for axisymmetric tanks of any shape. The tool is based on the original algorithm developed by D.O. Lomen for NASA in the CR-230 report and subsequently updated by F.T. Dodge at the Southwest Research Institute (SwRI).
 
 ## Installation
-If you have a Matlab version installed in your computer, simply download the source code and run `SLOSH_ML.mlapp`. Otherwise, you can access the Matlab binnaries under `SLOSH_ML/bin`. Remember that the [Matlab Runtime environment](https://www.mathworks.com/products/compiler/matlab-runtime.html) is required to operate these binary files. 
+If you have a Matlab version installed in your computer, simply download the source code and run `SLOSH_ML.mlapp`. Otherwise, you can access the Matlab binnaries under `SLOSH_ML/bin`. Remember that the [Matlab Runtime environment](https://www.mathworks.com/products/compiler/matlab-runtime.html) is required to operate these binary files. This version of SLOSH-ML depends on version 9.14 (2023a) of the runtime.
 
 ## Required Dependencies
-Access to the [MATLAB Optimization Toolbox](https://www.mathworks.com/products/optimization.html) is required to run SLOSH-ML.
+Access to the [MATLAB Optimization Toolbox](https://www.mathworks.com/products/optimization.html) is required to run SLOSH-ML from source.
 
 ## Formatting Contour Files
 In order to specify a tank geometry in the app, the user must choose a single contour file, which contains the inner and outer contours of the tank. Contour files contain four comma separated columns: 
