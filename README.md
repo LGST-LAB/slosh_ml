@@ -1,7 +1,10 @@
 # SLOSH ML version 0.1_beta User Guide
 
 ## Overview
-SLOSH ML version v0.1_beta is an open-source, MATLAB-based graphical user interface (GUI) tool from the LGST (Low Gravity Science and Technology) Lab at Georgia Tech that analyzes rocket propellant sloshing in different tank shapes for space launch vehicles utilizing a spring-mass model. It is based on the SLOSH-XL tool created by F.T. Dodge at the Southwestern Research Institute.
+SLOSH-ML is an open-source, MATLAB-based graphical user interface (GUI) tool designed to obtain the mechanical analogy parameters representing linear lateral sloshing for axisymmetric tanks of any shape. The tool is based on the original algorithm developed by D.O. Lomen for NASA in the CR-230 report and subsequently updated by F.T. Dodge at the Southwest Research Institute (SwRI).
+
+## Installation
+If you have a Matlab version installed in your computer, simply download the source code and run `SLOSH_ML.mlapp`. Otherwise, you can access the Matlab binnaries under `SLOSH_ML/bin`. Remember that the [Matlab Runtime environment](https://www.mathworks.com/products/compiler/matlab-runtime.html) is required to operate these binary files. 
 
 ## Required Dependencies
 The user will need the following dependencies to run the SLOSH ML program:
