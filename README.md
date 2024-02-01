@@ -35,4 +35,4 @@ After inputting the contour data, geometry settings, and physical parameters (st
 Link to current repository: https://github.com/LGST-LAB/slosh_ml
 
 ## References
-- B. González, Pablo Martin García, Evan Thomas, Alba Casas Gómez, Juan Trobajo Flecha, Pablo Chiva Ruiz, Manuel Cortés Hernán, Rabia Shahid, Justin Effendi, Evan Sánchez, and  ́Alvaro Romero-Calvo, "Open-Source Propellant Sloshing Modeling and Simulation", 2024 AAS Guidance, Navigation, and Control Conference, Breckenridge, CO, February 1-7, 2024
+- B. González, Pablo Martin García, Evan Thomas, Alba Casas Gómez, Juan Trobajo Flecha, Pablo Chiva Ruiz, Manuel Cortés Hernán, Rabia Shahid, Justin Effendi, Evan Sánchez, and  ́Alvaro Romero-Calvo, "Open-Source Propellant Sloshing Modeling and Simulation", 2024 AAS Guidance, Navigation, and Control Conference, Breckenridge, CO, February 1-7, 2024, URL: https://www.researchgate.net/publication/377851094_Open-Source_Propellant_Sloshing_Modeling_and_Simulation
