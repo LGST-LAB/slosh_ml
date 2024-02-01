@@ -1,4 +1,4 @@
-# SLOSH ML version 0.1_beta User Guide
+# SLOSH-ML User Guide
 
 ## Overview
 SLOSH-ML is an open-source, MATLAB-based graphical user interface (GUI) tool designed to obtain the mechanical analogy parameters representing linear lateral sloshing for axisymmetric tanks of any shape. The tool is based on the original algorithm developed by D.O. Lomen for NASA in the CR-230 report and subsequently updated by F.T. Dodge at the Southwest Research Institute (SwRI).
