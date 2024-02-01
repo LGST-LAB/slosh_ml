@@ -7,14 +7,19 @@ SLOSH-ML is an open-source, MATLAB-based graphical user interface (GUI) tool des
 If you have a Matlab version installed in your computer, simply download the source code and run `SLOSH_ML.mlapp`. Otherwise, you can access the Matlab binnaries under `SLOSH_ML/bin`. Remember that the [Matlab Runtime environment](https://www.mathworks.com/products/compiler/matlab-runtime.html) is required to operate these binary files. 
 
 ## Required Dependencies
-The user will need the following dependencies to run the SLOSH ML program:
-* MATLAB Optimization Toolbox
+Access to the [MATLAB Optimization Toolbox](https://www.mathworks.com/products/optimization.html) is required to run SLOSH-ML.
 
 ## Formatting Contour Files:
-In order to specify a tank geometry in the app, the user must choose a single contour file, which contains the inner and outer contours of the tank. Contour files contain four comma separated columns. The first two columns are a list of ordered pairs of the form (z, r), which are the height and radius of the inner contour. Similarly, the third and fourth columns are the height and radius of the outer contour. The inner and outer contours should begin and end at the same height. It should be noted that the inner and outer contours are not required to have the same number of data points. If one contour has fewer points than the other, the empty space in the array should be filled in with NaN. In the app directory, there is a script titled “generateContour.m.” If the radius of both contours as a function of height are known, the user can modify and run this script to generate contour files for the desired tank geometry. Contour files should be placed in the contours folder.
+In order to specify a tank geometry in the app, the user must choose a single contour file, which contains the inner and outer contours of the tank. Contour files contain four comma separated columns: 
+- Column 1: Height of the inner contour (z)
+- Column 2: Radius of the inner contour (r)
+- Column 3: Height of the outer contour (z)
+- Column 4: Radius of the outer contour (r)
+  
+The inner and outer contours begin and end at the same height. It should be noted that the inner and outer contours are not required to have the same number of data points. If one contour has fewer points than the other, the empty space in the array should be filled in with NaN. In the app directory, there is a script titled `generateContour.m`. If the radius of both contours as a function of height are known, the user can modify and run this script to generate contour files for the desired tank geometry. Sample contour files are placed in the `contours` folder.
 
 ## Using SLOSH ML:
-1. Before running the app file, ensure that all of the required dependencies (listed above) are installed. 
+1. Before running the app file, ensure that all the dependencies listed above are installed. 
 2. Run the app through the MATLAB interface.
 3. Navigate to the Geometry tab and load a contour file through the Load Contour button. The user will be prompted to open a file located in the contours directory. The user can choose from some simple test cases or input custom geometries. The process of building custom contour files is described above. After selecting a file, the chosen geometry will appear on the app figure and the user can adjust the R and Z factors to scale the geometry horizontally or vertically.
 4. Open the Physics tab and input the desired fluid density, surface tension, and acceleration. The user can also edit the integration settings through the Advanced tab, but this is not recommended as changing the number of shallow and deep tank modes could interfere with convergence.
@@ -28,3 +33,6 @@ After inputting the contour data, geometry settings, and physical parameters (st
 
 ## Current Repository for SLOSH-ML
 Link to current repository: https://github.com/LGST-LAB/slosh_ml
+
+## References
+- B. González, Pablo Martin García, Evan Thomas, Alba Casas Gómez, Juan Trobajo Flecha, Pablo Chiva Ruiz, Manuel Cortés Hernán, Rabia Shahid, Justin Effendi, Evan Sánchez, and  ́Alvaro Romero-Calvo, "Open-Source Propellant Sloshing Modeling and Simulation", 2024 AAS Guidance, Navigation, and Control Conference, Breckenridge, CO, February 1-7, 2024
