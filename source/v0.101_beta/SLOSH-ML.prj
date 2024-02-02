@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.101_beta\SLOSH-ML.prj" location="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.101_beta" name="SLOSH-ML" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\source\v0.101_beta\SLOSH-ML.prj" location="D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\source\v0.101_beta" name="SLOSH-ML" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SLOSH_ML</param.appname>
     <param.icon>${PROJECT_ROOT}\SLOSH-ML_resources\icon.ico</param.icon>
     <param.icons>
@@ -14,7 +14,7 @@
     <param.company />
     <param.summary>SLOSH-ML is a Matlab graphical user interface designed to analyze rocket propellant sloshing in space launch vehicle</param.summary>
     <param.description>See https://github.com/LGST-LAB/slosh_ml/tree/main</param.description>
-    <param.screenshot>${PROJECT_ROOT}\resources\logo.png</param.screenshot>
+    <param.screenshot>${PROJECT_ROOT}\SLOSH-ML_resources\splash.png</param.screenshot>
     <param.guid />
     <param.installpath.string>\SLOSH_ML\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
@@ -80,7 +80,9 @@
       <file>${PROJECT_ROOT}\resources</file>
     </fileset.resources>
     <fileset.package />
-    <fileset.depfun />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_32.png</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="C:\delete_this_later" name="SLOSH_ML.exe" optional="false">C:\delete_this_later\SLOSH_ML.exe</file>
       <file location="C:\delete_this_later" name="splash.png" optional="false">C:\delete_this_later\splash.png</file>
@@ -88,8 +90,45 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023a</root>
-      <toolboxes />
+      <root>C:\Program Files\MATLAB\R2022a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
     </matlab>
     <platform>
       <unix>false</unix>
