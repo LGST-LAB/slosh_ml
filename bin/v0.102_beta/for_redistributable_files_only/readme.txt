@@ -2,7 +2,7 @@ SLOSH_ML Executable
 
 1. Prerequisites for Deployment 
 
-Verify that version 9.12 (R2022a) of the MATLAB Runtime is installed (or a more recent one).   
+Verify that version 9.12 (R2022a) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
 To find its location, enter
   
