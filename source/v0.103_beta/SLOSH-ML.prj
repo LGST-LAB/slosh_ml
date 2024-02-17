@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="2159601707" file="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\source\v0.103_beta\SLOSH-ML.prj" location="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\source\v0.103_beta" name="SLOSH-ML" preferred-package-location="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="313320449" file="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.103_beta\SLOSH-ML.prj" location="C:\Users\thoma\Documents\GT\LGST\slosh_ml\source\v0.103_beta" name="SLOSH-ML" preferred-package-location="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SLOSH_ML</param.appname>
     <param.icon>${PROJECT_ROOT}\SLOSH-ML_resources\icon.ico</param.icon>
     <param.icons>
@@ -22,8 +22,8 @@
     <param.install.notes />
     <param.target.install.notes />
     <param.intermediate>C:\TEMP</param.intermediate>
-    <param.files.only>C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta\standalone_files_only</param.files.only>
-    <param.output>C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta</param.output>
+    <param.files.only>C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.103_beta\standalone_files_only</param.files.only>
+    <param.output>C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.103_beta</param.output>
     <param.logdir>C:\TEMP</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
