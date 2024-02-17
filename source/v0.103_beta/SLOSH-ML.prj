@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\source\v0.102_beta\SLOSH-ML.prj" location="D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\source\v0.102_beta" name="SLOSH-ML" preferred-package-location="C:\Users\thoma\Documents\GT\LGST\slosh_ml\bin\v0.102_beta\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="2159601707" file="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\source\v0.103_beta\SLOSH-ML.prj" location="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\source\v0.103_beta" name="SLOSH-ML" preferred-package-location="C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SLOSH_ML</param.appname>
     <param.icon>${PROJECT_ROOT}\SLOSH-ML_resources\icon.ico</param.icon>
     <param.icons>
@@ -8,7 +8,7 @@
       <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_16.png</file>
     </param.icons>
-    <param.version>0.102</param.version>
+    <param.version>0.103</param.version>
     <param.authnamewatermark>Álvaro Romero-Calvo</param.authnamewatermark>
     <param.email />
     <param.company />
@@ -18,21 +18,21 @@
     <param.guid />
     <param.installpath.string>\SLOSH_ML\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo />
+    <param.logo>${PROJECT_ROOT}\resources\SLOSH-ML_welcome_screen_img.png</param.logo>
     <param.install.notes />
     <param.target.install.notes />
-    <param.intermediate>C:\Users\dell\Documents\MATLAB</param.intermediate>
-    <param.files.only>D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\bin\v0.102_beta\for_redistributable_files_only</param.files.only>
-    <param.output>D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\bin\v0.102_beta\for_redistributable_files_only</param.output>
-    <param.logdir>D:\Users\defaultuser0\Desktop\jfendi\Liquid Prop Sloshing Research\slosh_ml\bin\v0.102_beta</param.logdir>
+    <param.intermediate>C:\TEMP</param.intermediate>
+    <param.files.only>C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta\standalone_files_only</param.files.only>
+    <param.output>C:\Users\thoma\Documents\GT\LGST\LGST-Analytical-Sloshing-Tool\bin\v0.103_beta</param.output>
+    <param.logdir>C:\TEMP</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
     <param.support.packages />
-    <param.web.mcr>false</param.web.mcr>
-    <param.package.mcr>true</param.package.mcr>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.web.mcr.name>SLOSHML_installer</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
@@ -53,15 +53,15 @@
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
-      <param.logo />
       <param.install.notes />
       <param.target.install.notes />
       <param.enable.clean.build />
       <param.user.defined.mcr.options />
       <param.target.type />
       <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
       <param.no.mcr />
-      <param.web.mcr.name />
       <param.package.mcr.name />
       <param.no.mcr.name />
       <param.windows.command.prompt />
@@ -78,57 +78,21 @@
       <file>${PROJECT_ROOT}\contours</file>
       <file>${PROJECT_ROOT}\functions</file>
       <file>${PROJECT_ROOT}\resources</file>
+      <file>${PROJECT_ROOT}\saves</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun>
       <file>${PROJECT_ROOT}\SLOSH-ML_resources\icon_32.png</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="C:\Users\dell\Documents\MATLAB" name="splash.png" optional="false">C:\Users\dell\Documents\MATLAB\splash.png</file>
-      <file location="C:\Users\dell\Documents\MATLAB" name="readme.txt" optional="true">C:\Users\dell\Documents\MATLAB\readme.txt</file>
-      <file location="C:\Users\dell\Documents\MATLAB" name="SLOSH_ML.exe" optional="false">C:\Users\dell\Documents\MATLAB\SLOSH_ML.exe</file>
+      <file location="C:\TEMP" name="SLOSH_ML.exe" optional="false">C:\TEMP\SLOSH_ML.exe</file>
+      <file location="C:\TEMP" name="readme.txt" optional="true">C:\TEMP\readme.txt</file>
+      <file location="C:\TEMP" name="splash.png" optional="false">C:\TEMP\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2022a</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="embeddedcoder" />
-        <toolbox name="gpucoder" />
-        <toolbox name="fixedpoint" />
-        <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <embeddedcoder>
-          <enabled>true</enabled>
-        </embeddedcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
-      <toolbox>
-        <fixedpoint>
-          <enabled>true</enabled>
-        </fixedpoint>
-      </toolbox>
-      <toolbox>
-        <matlabhdlcoder>
-          <enabled>true</enabled>
-        </matlabhdlcoder>
-      </toolbox>
-      <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
+      <root>C:\Program Files\MATLAB\R2023a</root>
+      <toolboxes />
     </matlab>
     <platform>
       <unix>false</unix>
