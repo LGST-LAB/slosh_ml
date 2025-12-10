@@ -1,0 +1,684 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../contourDesigner/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>SLOSH-ML Main App - SLOSH_ML Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-slosh-ml" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SLOSH_ML Documentation" class="md-header__button md-logo" aria-label="SLOSH_ML Documentation" data-md-component="logo">
+      
+  <img src="../assets/icon_48.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SLOSH_ML Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SLOSH-ML Main App
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SLOSH_ML Documentation" class="md-nav__button md-logo" aria-label="SLOSH_ML Documentation" data-md-component="logo">
+      
+  <img src="../assets/icon_48.png" alt="logo">
+
+    </a>
+    SLOSH_ML Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    SLOSH-ML Main App
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLOSH-ML Main App
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-slosh-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SLOSH ML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametric-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parametric Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#damping-correlations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Damping Correlations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Damping Correlations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empty-cylindrical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Cylindrical Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-spherical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Spherical Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylindrical-tank-with-ring-baffles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cylindrical Tank with Ring Baffles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-toroidal-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Toroidal Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-conical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Conical Tank
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contourDesigner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contour Designer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Version Log
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-slosh-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SLOSH ML
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parametric-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parametric Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#damping-correlations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Damping Correlations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Damping Correlations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#empty-cylindrical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Cylindrical Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-spherical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Spherical Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cylindrical-tank-with-ring-baffles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cylindrical Tank with Ring Baffles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-toroidal-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Toroidal Tank
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empty-conical-tank" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Conical Tank
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>SLOSH-ML Main App</h1>
+
+<p><img alt="SLOSH-ML parametric analysis app interface showing the first three modes of an example tank." src="../assets/mainapp.png" /></p>
+<h2 id="using-slosh-ml">Using SLOSH ML</h2>
+<p>The instructions on running the Slosh-ML application are listed below.</p>
+<ol>
+<li>Before running the app file, ensure that all the dependencies listed above are installed. </li>
+<li>Run the app through the MATLAB interface.</li>
+<li>Navigate to the Geometry tab and load a contour file through the Load Contour button or design a contour file through the Design Contour button. To load a contour, the user will be prompted to open a file located in the contours directory. The user can choose from some simple test cases or input custom geometries. The process of building custom contour files is described above. After selecting a file, the chosen geometry will appear on the app figure, and the user can adjust the R and Z factors to scale the geometry horizontally or vertically. To design a contour, follow the instructions for the Contour Designer.<ol>
+<li>To use the .stl loader, click "Design Contour" and upload a saved .stl file (you'll have to save it from Solidworks beforehand). Next, you have to either "Save" or "Save and Load" the loaded-in .stl file as a .txt file. After this, you have to re-run Slosh-ML and load in the saved .txt file, if you clicked "Save" to get the slosh dynamic parameters. Otherwise, simply open the saved .txt file and load it into the Slosh-ML software. However, the .stl file only works with cyclindrical tanks and struggles with tank shapes that have mutliple axes of symmetry (e.g., toridal, spherical, etc.). A new version will be pushed to fix the .stl file reader soon.</li>
+<li>To use the image loader, click "Design Contour" and load in an image file that is saved using the "Load Image" button. When prompted, enter both the origin and a reference point on the image. You then have to put in the distance between the two points in real-world units. After this, enter the starting point (r,z) coordinates. Then to trace the outer contour, use the line, circular, or ellipse segment features. You can either input starting and ending (r,z) values or enable "Draw Mode". Keep adding segments until the outer contour is complete and click "Finish Contour". Next, complete the aforementioned steps for the inner contour and click "Finish Inner Contour". Lastly, click "Save" or "Save and Load" to save the created contour as a .txt file and proceed forward.</li>
+<li>To create a contour from scratch, simply click "Design Contour", build the outer and inner contours using the add line, circular, or elliptical segment buttons, and putting in their end points, or enabling "Draw Mode". After completion of the desired shape, save the file as a .txt and load it in to get the mechanical analogy slosh dynamics parameters. </li>
+</ol>
+</li>
+<li>If necessary, open the units tab and select the desired system of units. If any inputs have already been entered into the physics tab, they will be converted automatically. Please note that the previously defined geometry is assumed to be in the desired units already and will not scale automatically.</li>
+<li>Open the Physics tab and input the desired fluid density, surface tension, and acceleration. The user can also edit the integration settings through the Advanced tab, but this is not recommended as changing the number of shallow and deep tank modes could interfere with convergence. </li>
+<li>Press the calculate button. The core solver will compute the modes of the system and display the results in the app tables. The user can view eigenvectors and frequencies, mode information, pendulum parameters, and spring parameters in the Bulk Output, Modes, Pendulum, and Spring tabs, respectively. The calculation step can also be completed through the Parametric Analysis tab. This process is described below.</li>
+<li>Navigate to the damping tab and select a tank geometry and correlation. If necessary, enter the number of baffles, baffle spacing, baffle width, and top baffle depth. The damping ratio of the given configuration will be computed automatically. Please note that if the selected geometry is cylindrical with baffles, the damping ratio will be normalized by the ratio of wave height to tank radius. Information on the damping correlations implemented in SLOSH-ML can be found below.</li>
+</ol>
+<h2 id="parametric-analysis">Parametric Analysis</h2>
+<p>After inputting the contour data, geometry settings, and physical parameters (steps 1-4 above), the user can analyze a range of accelerations and fill ratios automatically through the parametric analysis tab instead of the calculate button. This process is as follows:</p>
+<p>Navigate to the parametric analysis tab and press “Select File.” Input a comma-separated file containing fill ratio and acceleration data. The file should have 2 or 3 columns, with the first containing accelerations, and the second containing percent fill ratios. The third column is optional and lists the time at each data point. The fill ratios and accelerations loaded from the file will overwrite the values specified by the interface controls. Note that fill ratio should range from 0 to 100, exclusive.
+Press “Compute” and wait for the app to finish the computation.
+Press “Export” and select an output file name and location. The output file will list the acceleration, fill ratio, Weber number, Froude number, Bond number, modal frequencies, modal masses, pendulum lengths, pendulum mass heights, amplitude ratios, spring mass hinge points, and spring stiffnesses for each data point as a comma-separated file.</p>
+<h2 id="damping-correlations">Damping Correlations</h2>
+<h3 id="empty-cylindrical-tank">Empty Cylindrical Tank</h3>
+<p>SLOSH-ML includes two damping correlations for an empty cylindrical tank. The first was developed by D. G. Stephens, et al, using experimental results from 12 and 36 inch diameter tanks [7]. A second correlation, which was derived independently by G. N. Mikishev and N. Ya. Dorozhkin, is also included [4].</p>
+<h3 id="empty-spherical-tank">Empty Spherical Tank</h3>
+<p>Damping in an empty spherical tank is computed using two correlations by Mikishev and Dorozhkin, with one corresponding to high fill ratios and one corresponding to low fill ratios [4]. These correlations characterize the damping ratio as a function of fill ratio experimentally, using a theoretical dependence on the viscosity parameter. It should be noted that this correlation has been scaled to account for differences between experimental and theoretical dependence on the viscosity parameter, as advised by H. Abramson [4].</p>
+<h3 id="cylindrical-tank-with-ring-baffles">Cylindrical Tank with Ring Baffles</h3>
+<p>SLOSH-ML includes the ring baffle damping correlation proposed by H. Bauer, which accounts for a superposition of equally spaced ring baffles and is a generalization of an earlier formula derived by J. W. Miles for a single baffle [6]. Further investigations by Shane Coogan and Steven Green concluded that Miles' correlation is inaccurate and non-conservative in actual experiments. Coogan proposes a multiplicative factor in the exponential of Miles' correlation which accounts for the underprediction of decay from theory [9]. SLOSH-ML includes the theoretical correlation by Bauer for a series of baffles and the corrected correlation by Coogan for a single baffle. Please note that baffle damping is nonlinear, and the damping ratio depends on the amplitude of oscillation. Since wave amplitude is unknown, the damping ratio will be normalized by wave height and displayed as damping ratio/(wave height/tank radius)^0.5.</p>
+<p>As with the other datasets, the theory over-predicts damping as depth increases.</p>
+<p>The small flat-bottomed cylinder, large-domed cylinder, and small spheroid data all indicate that the theoretical predictions of damping are inaccurate and non-conservative.</p>
+<p>Equation (3) — General result for any tank shape:</p>
+<pre><code>  γ = (15 * (4 / (3π))^2 * A_b * f_d^(2.5x) * √(δw)) 
+      / (2√π (m_s/ρ) * Γ^2)
+</code></pre>
+<p>For a deep flat-bottom cylindrical tank, the relationship simplifies to:</p>
+<pre><code>  γ = 2.83 * e^(−4.6 * (h_s / R)) * (A_b / A)^1.5 * √(δ / R)
+</code></pre>
+<p>The appropriate value of x depends on the experiment, but Figure 10 through Figure 12 show that a value of x ranging between 1.2 and 1.9 reconciles the predictions with the data for each case. A value of 1.55—the simple average of these limits—is recommended for use in the design of new systems until validation data are available. This value is used for the correction factor of the damping ratios applied to any type of cylinder with baffles.</p>
+<h3 id="empty-toroidal-tank">Empty Toroidal Tank</h3>
+<p>An investigation by I. E. Sumner [8] for various toroidal tanks yielded plots of damping ratio as a function of fill height. The toroid minor radius was held constant at 6.35 cm and major radius varied from 9.5 cm to 22.2 cm. A curve fit of this plot is included in SLOSH-ML. It should be noted that the original experiment used Acetelyne Tetrabromide, which has a viscosity of 3.3e-6 m^2/s.</p>
+<h3 id="empty-conical-tank">Empty Conical Tank</h3>
+<p>Damping ratios for an upwards-opening conical tank were investigated and plotted by G. N. Mikishev and N. Ya. Dorozhkin [4]. Curve fits of this plot are included in SLOSH-ML. Results are valid for cone half angles up to 20 degrees. Please note that in SLOSH-ML, the correlation is evaluated using the cone angle and fill height, so editing tank radius in the damping tab will not affect results.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>B. González, Pablo Martin García, Evan Thomas, Alba Casas Gómez, Juan Trobajo Flecha, Pablo Chiva Ruiz, Manuel Cortés Hernán, Rabia Shahid, Justin Effendi, Evan Sánchez, and Álvaro Romero-Calvo, "Open-Source Propellant Sloshing Modeling and Simulation," 2024 AAS Guidance, Navigation, and Control Conference, Breckenridge, CO, February 1-7, 2024, URL: https://www.researchgate.net/publication/377851094_Open-Source_Propellant_Sloshing_Modeling_and_Simulation</li>
+<li>D. O. Lomen, “Digital analysis of liquid propellant sloshing in mobile tanks with rotational symmetry,” Tech. Rep. CR-230, NASA, 1965.</li>
+<li>F. T. Dodge, The New “Dynamic Behavior of Liquids in Moving Containers.” Southwest Research Inst., 2000.</li>
+<li>H. Abramson, "The dynamic behavior of liquids in moving containers, with applications to space vehicle technology," Tech. Rep. SP-106, N67-15884, NASA, August 1966.</li>
+<li>R. Ibrahim, "Liquid sloshing," Tech. rep., Oxford, 2001, doi:https://doi.org/10.1006/rwvb.2001.0086.</li>
+<li>H. Bauer, "The damping factor provided by flat annular ring baffles for free fluid surface oscillations," pp. 13, Tech. Rep. TM-X-50183, X63-14246, NASA, November 1962.</li>
+<li>D. G. Stephens, L. H. Wayne, and T. W. Perry, "Investigation of the Damping of Liquids in Right-Circular Cylindrical Tanks, Including the Effects of a Time-Variant Liquid Depth," Tech. Rep. TN-D-1367, N62-14069, NASA, July 1962.</li>
+<li>I. E. Sumner, "Preliminary Experimental Investigation of Frequencies and Forces Resulting From Liquid Sloshing in Toroidal Tanks," Tech. Rep. TN-D-1709, NASA, June 1963.</li>
+<li>Shane B. Coogan and Steven Green, "Critical Review of Damping Prediction Methods for Annular Ring Slosh Baffles," AIAA 2019-4436, AIAA Propulsion and Energy 2019 Forum, August 2019.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
